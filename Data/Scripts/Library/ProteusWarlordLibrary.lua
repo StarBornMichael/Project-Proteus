@@ -116,7 +116,7 @@ return {
 			HeroList = {"Ramier_Team","Trier_Secutor","Lacmar_Team","Maston_Team","Tilas_Magore_Team"},
 			UnlockList = {
 				-- Space
-				"VT49_Decimator_Group", "Imperial_CR90", "Tartan_Patrol_Cruiser", "Marauder_Picket_Cruiser", "Victory_I_Frigate", "Galleon_Minelayer", "Eidolon", 
+				"VT49_Decimator_Group", "IPV1", "Tartan_Patrol_Cruiser", "Marauder_Picket_Cruiser", "Victory_I_Frigate", "Galleon_Minelayer", "Eidolon", 
 				"Rep_DHC", "Gladiator_I", "Acclamator_I_Supercruiser", "Neutron_Star_Tender", "Victory_I_Star_Destroyer", "Victory_II_Carrier", 
 				"Imperial_I_Star_Destroyer", "Tector_Star_Destroyer", "Secutor_Star_Destroyer", "Acclamator_Destroyer", 
 				"Altor_Carrier", "Praetor_I_Battlecruiser", "Bellator_Star_Dreadnought",
@@ -127,7 +127,10 @@ return {
 				"B5_Juggernaut_Company", "Tracked_Mobile_Base_Company", 
 				-- Research
 				"Dummy_Research_Brak_Fighters", "Dummy_Research_Brak_Fleet",
+				-- Specials
+				"Dummy_Recruit_Pira_Leemad", "Lant_Mining_Facility_Minerals_Space", "Lant_Mining_Facility_Minerals_Ground", "Lant_Mining_HQ", 
 			},
+			LockList = {"Mining_Facility_Minerals_Ground", "Mining_Facility_Minerals_Space",},
 			FactionOverride = "Empire",
 			IntroText = "TEXT_CONQUEST_PROTEUS_BRAK",
 			IntroHolo = "ISB_Officer_Loop"
@@ -373,7 +376,7 @@ return {
 				"Maelstrom_Battlecruiser", "Imperial_I_Star_Destroyer",
 				"Praetor_Carrier_Battlecruiser", "Bellator_Star_Dreadnought",
 				-- Land
-				"Imperial_Army_Guard_Company", "Light_Mercenary_Company", "Republic_BARC_Company",
+				"Imperial_Army_Guard_Company", "Light_Mercenary_Company", "Republic_BARC_Company", "Random_Infantry_Kaarenth", 
 				"Imperial_AT_PT_Company", "AT_XT_Company", "Gian_Company", "008_Speeder_Company", "Imperial_Flashblind_Company", "New_Republic_MPTL_Company",
 				"Imperial_LAAT_Company", "MZ8_Tank_Company", "AT_AI_Walker_Company",
 		 		"Canderous_Assault_Tank_Lasers_Company", "Teklos_Company",
@@ -1167,7 +1170,7 @@ return {
 			UnlockList = {
 				-- Space 
 				"Gamma_ATR_6_Group", "IPV1", "Lancer_Frigate_Prototype", "Active_Frigate", "Quasar", "Vigil",
-				"Pursuit_Light_Cruiser", "Rep_DHC", "Neutron_Star_Tender", "Vindicator_Carrier", "Acclamator_I_Carrier", "Victory_II_Carrier", "Victory_I_Fleet_Star_Destroyer",
+				"Pursuit_Light_Cruiser", "Immobilizer_418", "Neutron_Star_Tender", "Vindicator_Carrier", "Acclamator_I_Carrier", "Victory_II_Carrier", "Victory_I_Fleet_Star_Destroyer",
 				"Imperial_I_Star_Destroyer", "Secutor_Star_Destroyer", "Acclamator_Battleship", "Imperial_II_Star_Destroyer_Ion",
 				"Altor_Carrier", "Executor_Star_Dreadnought",
 				-- Ground
@@ -1176,13 +1179,14 @@ return {
 				"Imperial_UT_AA_Company","1M_Tank_Company", "Imperial_Missile_Artillery_Company", "Imperial_Modified_LAAT_Company",
 				"Heavy_Recovery_Vehicle_Company", "Imperial_A5_Juggernaut_Company",
 				-- Research
-				
+				"Dummy_Research_Batch_Fighters", "Dummy_Research_Batch_Infantry", "Dummy_Research_Batch_Vehicles", "Dummy_Research_Batch_Ships",
 			},
 			FactionOverride = "Pentastar",
 			StartYear = 4,
 			LastYear = 4,
 			IntroText = "TEXT_CONQUEST_PROTEUS_BATCH",
 			IntroHolo = "Batch_Loop",
+			CustomRewardTable = true,
 		},
 		["BRANDEI"] = {
 			FriendlyName = "Thrawn Remnants",
@@ -1202,7 +1206,7 @@ return {
 				"Imperial_TX130T_Company", "AT_AA_Walker_Company", "SPMAG_Walker_Company", "Imperial_LAAT_Company", "MZ8_Tank_Company", "Deathhawk_Company",
 				"Canderous_Assault_Tank_Lasers_Company", "Imperial_AT_AT_Walker_Turbolaser_Refit_Company", "Imperial_A5_Juggernaut_Company",
 				-- Research
-				"Gorath_Research_Proteus",
+				"Gorath_Research_Proteus", "Dummy_Research_Brandei_Stealth_ISD",
 			},
 			FactionOverride = "Rebel",
 			StartYear = 10,
@@ -1316,7 +1320,10 @@ return {
 			HeroList = {"Reder_Krieger", "Niclara_Pulsars_Revenge", "Drommel_Wolfs_Claw"},
 			UnlockList = {
 				-- Space 
+
 				"Delta_JV7_Group", "Customs_Corvette", "Ipv1_Gunboat_Proteus", "Lancer_Frigate", "Star_Galleon", "Carrack_Cruiser", "Ton_Falk_Escort_Carrier", "Strike_Cruiser",
+
+				"Delta_JV7_Group", "Customs_Corvette", "CR92A", "Ipv1_Gunboat_Proteus",  "Tartan_Patrol_Cruiser", "Star_Galleon", "Carrack_Cruiser", "Ton_Falk_Escort_Carrier", "Strike_Cruiser",
 				"Immobilizer_418", "Vindicator_Cruiser", "Victory_I_Star_Destroyer", "Victory_II_Star_Destroyer",
 				"Imperial_I_Star_Destroyer", "Imperial_II_Star_Destroyer",
 				"Torpedo_Sphere", "Sorannan_Star_Destroyer", "Executor_Star_Dreadnought",
@@ -1472,7 +1479,7 @@ return {
 				"Interdictor_Star_Destroyer", "Imperial_II_Star_Destroyer",
 				"Mandator_II_Dreadnought",
 				-- Ground
-				"Army_Special_Missions_Company", "EVO_Trooper_Company", "Republic_BARC_Company", --Replace EVOs with Stromtrooper Commandos when proteus version is done
+				"Army_Special_Missions_Company", "Stormtrooper_Commando_Company", "Republic_BARC_Company", 
 				"Repulsor_Scout_Company", "RTT_Company", "1L_Tank_AV_Company", "Chariot_LAV_Company", 
 				"AT_AA_Flak_Walker_Company", "SPMAG_Walker_Company", "HAET_Company", 
 				"Imperial_AT_TE_Walker_Company", "Imperial_AT_AT_Walker_Company", 
